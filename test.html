@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+<!-- first test -->
+<script>
+	var currentTime = new Date();
+	document.write(currentTime);
+</script>
+<br>
+<!-- second test -->
+<script src="js/dateGen.js"></script>
+<br>
+<!-- third test -->
+<script>
+	var time = new Date();
+	var year = time.getFullYear();
+	var mo = time.getMonth()+1; //January is 0!
+	var date = time.getDate();
+	var hour = time.getHours();
+	var min = time.getMinutes();
+	
+	if(date<10) {
+    	date='0'+date
+	} 
+
+	if(mo<10) {
+    	mo='0'+mo
+	}
+	if(hour<10) {
+	   	hour='0'+hour
+	}
+	if(min<10) {
+    	min='0'+min
+	}
+
+	var etime = year + "" + mo + "" + date + "" + hour + "" + min;
+	document.write(etime);
+</script>
+<br>
+<!-- fourth test -->
+<script src="js/dateGen2.js"></script>
+<a href="javascript:window.location=dateGen();">test</a>
+<br>
+<!-- fifth test -->
+<script src="js/dateGen3.js"></script>
+
+<script src="js/test.js"></script>
+
+</body>
+</html>
